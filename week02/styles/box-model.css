@@ -9,19 +9,25 @@
 }
 
 .callout img {
-	position: absolute;
+	float: right;
     margin: .75em;
     padding: .25em;
-    border: 2px solid black;
+    border: 1px solid black;
     background-color: #BBBBBB;
     width: 16em;
-    height: 16em;
+    height: auto;
+    
 }
 
 blockquote {
-	
+	margin: .75em;
+    font-size: 1.5em;
 }
 
 cite {
-	
+	display: block;
+    border-top: 2px dotted #BBBBBB;
+    text-align: right;
+    padding-top: .75em;
+    font-size: smaller;
 }
