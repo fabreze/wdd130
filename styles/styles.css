@@ -50,13 +50,21 @@
     --md-sys-color-surface-container-highest: rgb(222 228 223);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-size: 16px;
     background-color: var(--md-sys-color-surface);
 }
 
 main{
-    max-width: 30em;
+    max-width: 60em;
+    margin: 1em;
+    padding: 1em;
 }
 
 main img {
@@ -66,20 +74,28 @@ main img {
     background-color: var(--md-sys-color-surface);
     border: 1px solid var(--md-sys-color-outline);
     padding: 1em;
+    float: right;
+}
+
+main p{
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 aside {
     width: 30em;
-    margin: 1em;
-    border: 1px solid var(--md-sys-color-outline);
-    padding: 1em;
-    background-color: var(--md-sys-color-surface-container);
-    color: #171d1a;
+    text-align: center;
 }
 
 aside img{
-    width: 200px;
+    width: 300px;
     height: auto;
+}
+
+aside h2{
+    position: absolute;
+    left: 150px;
+    color: var(--md-sys-color-on-surface)
 }
 
 nav {
@@ -106,4 +122,14 @@ footer {
     margin-top: 1em;
     border-top: 1px solid var(--md-sys-color-outline);
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1em;
+    padding: 1em;
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-on-surface);
+    border: 1px solid var(--md-sys-color-outline);
+    max-width: max-content;
 }
