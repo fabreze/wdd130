@@ -80,7 +80,7 @@ nav, p, section, article{
 .hero article{
     position: absolute;
     bottom:0;
-    width: 100%;
+    width: fit-content;
     padding: .25em;
     text-align: center;
     opacity: 70%;
