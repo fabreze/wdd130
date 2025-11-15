@@ -83,6 +83,7 @@ main p{
 }
 
 aside {
+    position: relative;
     width: 30em;
     text-align: center;
 }
