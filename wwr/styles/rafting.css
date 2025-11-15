@@ -1,0 +1,139 @@
+:root{
+    --color-primary: rgb(20 107 85);
+    --color-surface-tint: rgb(20 107 85);
+    --color-on-primary: rgb(255 255 255);
+    --color-primary-container: rgb(163 242 214);
+    --color-on-primary-container: rgb(0 81 63);
+    --color-secondary: rgb(75 99 90);
+    --color-on-secondary: rgb(255 255 255);
+    --color-secondary-container: rgb(206 233 221);
+    --color-on-secondary-container: rgb(52 76 67);
+    --color-tertiary: rgb(64 99 118);
+    --color-on-tertiary: rgb(255 255 255);
+    --color-tertiary-container: rgb(195 232 254);
+    --color-on-tertiary-container: rgb(39 75 93);
+    --color-error: rgb(186 26 26);
+    --color-on-error: rgb(255 255 255);
+    --color-error-container: rgb(255 218 214);
+    --color-on-error-container: rgb(147 0 10);
+    --color-background: rgb(245 251 246);
+    --color-on-background: rgb(23 29 26);
+    --color-surface: rgb(245 251 246);
+    --color-on-surface: rgb(23 29 26);
+    --color-surface-variant: rgb(219 229 223);
+    --color-on-surface-variant: rgb(63 73 69);
+    --color-outline: rgb(112 121 116);
+    --color-outline-variant: rgb(191 201 195);
+    --color-shadow: rgb(0 0 0);
+    --color-scrim: rgb(0 0 0);
+    --color-inverse-surface: rgb(44 50 47);
+    --color-inverse-on-surface: rgb(236 242 238);
+    --color-inverse-primary: rgb(136 214 187);
+    --color-primary-fixed: rgb(163 242 214);
+    --color-on-primary-fixed: rgb(0 33 24);
+    --color-primary-fixed-dim: rgb(136 214 187);
+    --color-on-primary-fixed-variant: rgb(0 81 63);
+    --color-secondary-fixed: rgb(206 233 221);
+    --color-on-secondary-fixed: rgb(8 32 24);
+    --color-secondary-fixed-dim: rgb(178 204 193);
+    --color-on-secondary-fixed-variant: rgb(52 76 67);
+    --color-tertiary-fixed: rgb(195 232 254);
+    --color-on-tertiary-fixed: rgb(0 30 44);
+    --color-tertiary-fixed-dim: rgb(168 203 226);
+    --color-on-tertiary-fixed-variant: rgb(39 75 93);
+    --color-surface-dim: rgb(213 219 215);
+    --color-surface-bright: rgb(245 251 246);
+    --color-surface-container-lowest: rgb(255 255 255);
+    --color-surface-container-low: rgb(239 245 240);
+    --color-surface-container: rgb(233 239 235);
+    --color-surface-container-high: rgb(228 234 229);
+    --color-surface-container-highest: rgb(222 228 223);
+    --font-header: "Roboto", sans-serif;
+    --font-header-weight: 600;
+    --font-body: "Roboto Serif", sans-serif;
+    --font-body-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: var(--font-weight);
+    font-size: 16px;
+    color: var(--color-on-surface);
+}
+
+header, main, footer{
+    width: 52em;
+    margin: 0 auto;
+}
+
+h1, h2{
+    font-family: var(--font-header);
+    font-weight: var(--font-header-weight);
+    color: var(--color-primary)
+}
+
+h1{
+    position: absolute;
+    top: 1em;
+    width: 100%;
+    padding: .25em;
+    text-align: center;
+    opacity: 70%;
+    background-color: var(--color-secondary);
+    color: var(--color-on-secondary);
+}
+
+h2{
+    width: 100%;
+    padding: .25em;
+    text-align: center;
+    background-color: var(--color-secondary-container);
+    color: var(--color-on-secondary-container);
+}
+
+
+nav, p, section, article{
+    margin: 1em;
+    padding: .5em;
+}
+
+article{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    padding: .25em;
+    text-align: center;
+    opacity: 70%;
+    background-color: var(--color-tertiary);
+    color: var(--color-on-secondary);
+    text-align: left;
+}
+
+/*Class Selectors*/
+
+.socialmedia a{
+    text-decoration: none;
+}
+
+.hero{
+    position: relative;
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article img{
+    float: right;
+    width: 8em;
+    height: auto;
+    margin: .25em;
+}
