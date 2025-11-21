@@ -1,15 +1,14 @@
 :root{
-    --color-primary: rgb(20 107 85);
-    --color-secondary: rgb(75 99 90);
-    --color-on-secondary: rgb(255 255 255);
-    --color-secondary-container: rgb(206 233 221);
-    --color-on-secondary-container: rgb(52 76 67);
-    --color-tertiary: rgb(64 99 118);
-    --color-on-surface: rgb(23 29 26);
-    --font-header: "Roboto", sans-serif;
-    --font-header-weight: 600;
-    --font-body: "Roboto Serif", sans-serif;
-    --font-body-weight: 400;
+    --primary-color: rgb(20 107 85);
+    --secondary-color: rgb(75 99 90);
+    --secondary-color-text: rgb(255 255 255);
+    --accent1-color: rgb(206 233 221);
+    --accent1-color-text: rgb(52 76 67);
+    --accent2-color: rgb(64 99 118);
+    --text-color: rgb(23 29 26);
+    --heading-font: "Roboto", sans-serif;
+    --heading-font-weight: 600;
+    --body-font: "Roboto Serif", sans-serif;
 }
 
 * {
@@ -19,10 +18,10 @@
 }
 
 body {
-    font-family: var(--font-body);
+    font-family: var(--body-font);
     font-weight: var(--font-weight);
     font-size: 16px;
-    color: var(--color-on-surface);
+    color: var(--text-color);
 }
 
 header, main, footer{
@@ -31,17 +30,17 @@ header, main, footer{
 }
 
 h1, h2{
-    font-family: var(--font-header);
-    font-weight: var(--font-header-weight);
-    color: var(--color-primary)
+    font-family: var(--heading-font);
+    font-weight: var(--heading-font-weight);
+    color: var(--primary-color)
 }
 
 h2{
     width: 100%;
     padding: .25em;
     text-align: center;
-    background-color: var(--color-secondary-container);
-    color: var(--color-on-secondary-container);
+    background-color: var(--accent1-color);
+    color: var(--accent1-color-text);
 }
 
 
@@ -73,8 +72,8 @@ nav, p, section, article{
     padding: .25em;
     text-align: center;
     opacity: 70%;
-    background-color: var(--color-secondary);
-    color: var(--color-on-secondary);
+    background-color: var(--secondary-color);
+    color: var(--secondary-color-text);
 }
 
 .hero article{
@@ -84,8 +83,8 @@ nav, p, section, article{
     padding: .25em;
     text-align: center;
     opacity: 70%;
-    background-color: var(--color-tertiary);
-    color: var(--color-on-secondary);
+    background-color: var(--accent2-color);
+    color: var(--secondary-color-text);
     text-align: left;
 }
 
