@@ -62,9 +62,9 @@ body{
 }
 
 main{
-    max-width: 60em;
     margin: 1em;
     padding: 1em;
+    grid-column: 2/3;
 }
 
 main img {
@@ -75,17 +75,23 @@ main img {
     border: 1px solid var(--md-sys-color-outline);
     padding: 1em;
     float: right;
+    margin: .75em;
 }
 
 main p{
     margin-top: .5em;
     margin-bottom: .5em;
+    padding: .75em;
 }
 
 aside {
     position: relative;
     width: 30em;
     text-align: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-content: stretch;
+    margin: 1em;
 }
 
 aside img{
@@ -95,28 +101,41 @@ aside img{
 
 aside h2{
     position: absolute;
-    left: 150px;
+    left: 3.125em;
     color: var(--md-sys-color-on-surface)
+}
+
+aside p{
+    max-width: 20em;
 }
 
 nav {
     background-color: var(--md-sys-color-secondary-container);
     padding: 0;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: var(--md-sys-color-on-secondary-container);
     display: block;
     padding: 1.25em;
+    text-decoration: none;
 }
 
 h1 {
     color: var(--md-sys-color-tertiary);
+    border-bottom: 1px solid var(--md-sys-color-outline);
 }
 
 p {
     padding: 0;
+}
+
+header, .grid, footer {
+  max-width: 60em;
+  margin: 0 auto;
 }
 
 footer {
@@ -132,5 +151,11 @@ footer {
     background-color: var(--md-sys-color-surface-container);
     color: var(--md-sys-color-on-surface);
     border: 1px solid var(--md-sys-color-outline);
-    max-width: max-content;
+    max-width: 22em;
+    align-self: flex-start;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
 }
