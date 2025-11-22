@@ -49,6 +49,48 @@ nav, p, section, article{
     padding: .5em;
 }
 
+header {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 6em;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 /*Class Selectors*/
 
 .socialmedia a{
@@ -93,4 +135,49 @@ nav, p, section, article{
     width: 8em;
     height: auto;
     margin: .25em;
+}
+
+.history{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: inherit;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.history img{
+    width: 100%;
+    height: auto;
+}
+
+.history p{
+    margin: 0;
+    padding: 1em;
+    width: 100%;
+}
+
+.adventure
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    max-width: inherit;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.adventure figure{
+    width: 100%;
+    height: auto;
+    padding: 1em;
+}
+
+.adventure figure img{
+    width: 100%;
+    height: auto;
+}
+
+.adventure figcaption{
+    text-align: center;
 }
