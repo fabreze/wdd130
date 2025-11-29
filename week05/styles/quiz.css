@@ -1,0 +1,81 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+main {
+    display: grid;
+    margin: 1em;
+    padding: 1em;
+    background-color: #FFFFFF;
+    gap: 1em;
+}
+
+form {
+    display: grid;
+    max-width: 500px;
+    padding: 2em 1.5em 2em 1.5em;
+    border: 1px solid #D7D7D7;
+    background-color: #EEEEEE;
+    gap: 1em;
+}
+
+button {
+    padding: 1em 0.5em;
+    background-color: #000080;
+    color: #FFF;
+    border: none;
+    border-radius: .25em;
+    width: 100%;
+}
+
+h1{
+    font-size: 2em;
+    color: #000080;
+}
+
+/*Class Selectors*/
+.question {
+    display: grid;
+    gap: 0.5em;
+    width: 100%;
+}
+
+
+.question label{
+    width: 100%;
+}
+
+.question input{
+    width: 100%;
+    height: 2em;
+    border-radius: 4px;
+}
+
+.question textarea{
+    width: 100%;
+    height: 5em;
+    border-radius: 4px;
+}
+
+.question select{
+    width: 100%;
+    height: 2em;
+    border-radius: 4px;
+    font-size: inherit;
+}
+
+.question span {
+    color: #000080;
+    font-weight: 600;
+}
+
+.question code{
+    background-color: #333333;
+    color: #FFF;
+    padding: 1em;
+    text-align: center;
+}
