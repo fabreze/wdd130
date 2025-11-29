@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This page is a form that allows prospects to get in contact with the company">
+    <meta name="description" content="This page is a form that allows prospects to get in contact with the company.">
     <meta name="author" content="Fabrizio Caballero">
     <title>Contact Us Whitewater Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
@@ -32,66 +32,64 @@
                 <p>info@whitewater.com</p>
             </div>
         </section>
-        <section>
-            <div class="map-form">
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1746.641257739851!2d-54.441387235815874!3d-25.6831104954605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spy!4v1764441004831!5m2!1sen!2spy"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-form">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1746.641257739851!2d-54.441387235815874!3d-25.6831104954605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spy!4v1764441004831!5m2!1sen!2spy"
+                    width="600" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form class="contact-form">
+                <div class="text-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name..." name="name">
                 </div>
-                <form class="contact-form">
-                    <div class="text-field">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Enter your name...">
-                    </div>
-                    <div class="text-field">
-                        <label for="email">Email</label>
-                        <input type="text" id="email" placeholder="Enter your email...">
-                    </div>
-                    <div class="radio">
-                        <label>Message Purpose</label>
-                        <div class="radio-options">
-                            <div>
-                                <input type="radio" id="inquiry">
-                                <label for="inquiry">General Inquiry</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="reservation">
-                                <label for="reservation">Reservation Question</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="suggestion">
-                                <label for="suggestion">Website Suggestion</label>
-                            </div>
+                <div class="text-field">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter your email..." name="email">
+                </div>
+                <div class="radio">
+                    <label>Message Purpose</label>
+                    <div class="radio-options">
+                        <div>
+                            <input type="radio" id="inquiry" name="message_purpose" value="General Inquiry">
+                            <label for="inquiry">General Inquiry</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="reservation" name="message_purpose" value="Reservation Question">
+                            <label for="reservation">Reservation Question</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="suggestion" name="message_purpose" value="Website Suggestion">
+                            <label for="suggestion">Website Suggestion</label>
                         </div>
                     </div>
-                    <div class="text-area">
-                        <label for="message">Message</label>
-                        <textarea id="message"></textarea>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" id="subscribe"></input>
-                        <label for="subscribe">Please subscribe me to the monthly newletter</label>
-                    </div>
-                    <button type="submit">Get in Touch!</button>
-                </form>
-            </div>
-        </section>
+                </div>
+                <div class="text-area">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newletter</label>
+                </div>
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </div>
         <section>
             <h2>We Are Here to Serve You</h2>
             <div class="employees">
                 <figure>
-                    <img src="images/whitewater-rafting-logo.png">
-                    <p>Employee Profile</p>
+                    <img src="images/employee1.jpg" alt="Headshot of John Baker, CEO">
+                    <p>John Baker - CEO</p>
                 </figure>
                 <figure>
-                    <img src="images/whitewater-rafting-logo.png">
-                    <p>Employee Profile</p>
+                    <img src="images/employee2.jpg" alt="Headshot of Melissa Simpson, COO">
+                    <p>Melissa Simpson - COO</p>
                 </figure>
                 <figure>
-                    <img src="images/whitewater-rafting-logo.png">
-                    <p>Employee Profile</p>
+                    <img src="images/employee3.jpg" alt="Headshot of Ashley Park, Vice President">
+                    <p>Ashley Park - Vice President</p>
                 </figure>
             </div>
         </section>

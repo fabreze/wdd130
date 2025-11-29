@@ -123,7 +123,6 @@ footer{
     bottom:0;
     width: fit-content;
     padding: .25em;
-    text-align: center;
     opacity: 70%;
     background-color: var(--accent2-color);
     color: var(--secondary-color-text);
@@ -220,6 +219,8 @@ footer{
     width:100%;
     height: 3em;
     margin: 0;
+    border-radius: 4px;
+    padding: 1em;
 }
 
 .contact-form .radio{
@@ -242,11 +243,14 @@ footer{
 
 .contact-form .text-area textarea{
     width: 100%;
+    margin: 0;
+    border-radius: 4px;
+    padding: 1em;
 }
 
 .contact-form .checkbox{
     display: flex;
-    flex-wrap: row wrap;
+    flex-flow: row wrap;
     align-items: center;
     gap: .25em;
 }
@@ -263,4 +267,11 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
+    gap: 1em;
+    margin: 1em;
+}
+
+.employees img{
+    width: 100%;
+    height: auto;
 }
