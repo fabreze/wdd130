@@ -275,7 +275,9 @@ footer{
 
 .adventure figcaption{
     text-align: center;
+    font-weight:700;
 }
+
 .contact-info{
     width:100%;
     text-align: center;
@@ -432,4 +434,37 @@ footer{
 
 .explore figure figcaption{
     text-align: center;
+    font-style: italic;
+}
+
+.contact p{
+    margin: 1em 0;
+}
+
+.table-section{
+    width: 100%;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    margin: 1em;
+    width: 100%;
+}
+
+.trips-table tr{
+    border: 1px solid var(--md-sys-color-outline);
+}
+
+.trips-table th{
+    background-color: var(--md-sys-color-surface-container);
+    color: var(--md-sys-color-secondary);
+    text-align: left;
+    padding: 1em;
+}
+
+.trips-table td{
+    text-align: left;
+    padding: 0.5em;
 }
