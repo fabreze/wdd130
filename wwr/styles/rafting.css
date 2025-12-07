@@ -449,12 +449,21 @@ footer{
     width: 100%;
     border-collapse: collapse;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    margin: 1em;
+    margin: 1em 0;
+    width: 100%;
+}
+
+.trips-table thead{
+    width: 100%;
+}
+
+.trips-table tbody{
     width: 100%;
 }
 
 .trips-table tr{
     border: 1px solid var(--md-sys-color-outline);
+    width: 100%;
 }
 
 .trips-table th{
